@@ -6,14 +6,13 @@ function getComputerChoice(){
 }
 console.log(getComputerChoice());
 
-function game() {
+/*function game() {
     for(let i = 0; i < 5; i++) {
         playRound;
     }
 }
-
+*/
 function playRound(playerSelection, computerSelection) {
-
     if (playerSelection === "paper" && computerSelection === "scissors") {
         //computerScore++; 
         return("You lose! Scissors beat Paper");
@@ -32,15 +31,15 @@ function playRound(playerSelection, computerSelection) {
     } else if (playerSelection === "rock" && computerSelection === "paper") {
         //computerScore++;
         return("You lose! Paper beats Rock");
-    } else if (playerSelection === computerSelection){
+    } else {
         return("It's a draw!");
     }
 }
 
-let playerScore = 0;
-let computerScore = 0;
+//let playerScore = 0;
+//let computerScore = 0;
 playerSelection = "rock";
 computerSelection = getComputerChoice;
 
-console.log(game());
+//console.log(game());
 console.log(playRound(playerSelection, computerSelection()));
